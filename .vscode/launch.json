@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:cat-mode}",
+      "name": "Debug CatMode",
+      "program": "${workspaceFolder:cat-mode}/.build/debug/CatMode",
+      "preLaunchTask": "swift: Build Debug CatMode"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:cat-mode}",
+      "name": "Release CatMode",
+      "program": "${workspaceFolder:cat-mode}/.build/release/CatMode",
+      "preLaunchTask": "swift: Build Release CatMode"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:cat-mode}/catmode",
+      "name": "Debug CatMode (catmode)",
+      "program": "${workspaceFolder:cat-mode}/catmode/.build/debug/CatMode",
+      "preLaunchTask": "swift: Build Debug CatMode (catmode)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:cat-mode}/catmode",
+      "name": "Release CatMode (catmode)",
+      "program": "${workspaceFolder:cat-mode}/catmode/.build/release/CatMode",
+      "preLaunchTask": "swift: Build Release CatMode (catmode)"
+    }
+  ]
+}
