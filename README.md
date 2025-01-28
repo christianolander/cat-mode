@@ -1,6 +1,7 @@
 
 
-![icon_128x128](https://github.com/user-attachments/assets/13a4211d-c5e0-4c90-a8be-224c90041a70)
+![icon_256x256](https://github.com/user-attachments/assets/7f7248f7-bd2e-4536-bd4e-e6d4e0fd1287)
+
 
 # Cat Mode 🐱
 
