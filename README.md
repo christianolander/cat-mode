@@ -16,10 +16,9 @@ A macOS utility that prevents accidental keyboard and mouse input by blocking al
   - Status bar menu icon
   - Black overlay bar at the top of the screen
   - Subtle screen tint
-- 💻 Works across all displays
 - 🔒 Safe deactivation options:
-  - Use keyboard shortcut
-  - Use menu bar controls
+  - Keyboard shortcut
+  - Clickable area for deactiviation (coming soon ❗) 
 
 ## Requirements
 
@@ -31,8 +30,8 @@ A macOS utility that prevents accidental keyboard and mouse input by blocking al
 ### From Release
 
 1. Download the latest release from the [Releases](https://github.com/christianolander/cat-mode/releases) page
-2. Move Cat Mode.app to your Applications folder
-3. Launch Cat Mode
+2. Move catmode.app to your Applications folder
+3. Launch catmode
 4. Grant necessary permissions when prompted:
    - Accessibility
    - Input Monitoring
@@ -92,9 +91,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
-
-- Thanks to all contributors and users who have helped improve Cat Mode
-- Special thanks to our feline friends for inspiring this project 😺
+- Special thanks to the feline friends for inspiring this project 😺
 
 ## Support
 
