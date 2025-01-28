@@ -30,5 +30,34 @@ struct PreferencesView: View {
         }
         .formStyle(.grouped)
         .frame(width: 350, height: 200)
+        .onAppear() {
+            print(getWindow()?.title ?? "No window found")
+            //makeWindowAlwaysOnTop()
+        }
+        .onDisappear() {
+            resetWindowLevel()
+        }
+        
     }
+    
+    private func makeWindowAlwaysOnTop() {
+          DispatchQueue.main.async {
+              if let window = getWindow() {
+                  window.level = .floating
+              }
+          }
+      }
+
+      private func resetWindowLevel() {
+            NSApp.setActivationPolicy(.accessory)
+            NSApp.deactivate()
+          
+      }
+
+      private func getWindow() -> NSWindow? {
+          
+          return NSApplication.shared.windows.first { window in
+              window.contentViewController?.view == NSHostingController(rootView: self).view
+          }
+      }
 }

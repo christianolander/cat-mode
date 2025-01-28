@@ -5,21 +5,26 @@ struct MenuBarView: View {
     
     var body: some View {
         VStack {
-            Toggle("Cat Mode", isOn: Binding(
-                get: { catModeManager.isActive },
-                set: { _ in catModeManager.toggleCatMode() }
-            ))
-            .toggleStyle(.switch)
-            .padding()
+            Button(action: {
+                           // Toggle the Cat Mode state
+                           catModeManager.toggleCatMode()
+                       }) {
+                           Text(catModeManager.isActive ? "Disable Cat Mode" : "Enable Cat Mode")
+                       }
             
             Divider()
             
-            SettingsLink {
-                Text("Preferences...")
+           
+            Button("Settings"){
+                NSApplication.shared.hide(nil)
+                let environment = EnvironmentValues()
+                    environment.openSettings()
+                    NSApp.setActivationPolicy(.regular)
+                    NSApp.activate(ignoringOtherApps: true)
+               
             }
-            .padding(.horizontal)
             
-            Divider()
+                
             
             Button("Quit") {
                 NSApplication.shared.terminate(nil)
