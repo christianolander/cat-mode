@@ -19,6 +19,12 @@ DerivedData
 *.xcworkspace
 !default.xcworkspace
 
+#Relases
+release/
+*.dmg
+*.app
+
+
 # Swift Package Manager
 .build/
 Packages/

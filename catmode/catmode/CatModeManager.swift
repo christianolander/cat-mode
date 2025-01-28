@@ -376,13 +376,13 @@ private func eventTapCallback(
     }
     
     // Block mouse events
-  /*  if type == .mouseMoved || type == .leftMouseDown || type == .leftMouseUp ||
+    if type == .mouseMoved || type == .leftMouseDown || type == .leftMouseUp ||
         type == .rightMouseDown || type == .rightMouseUp ||
         type == .otherMouseDown || type == .otherMouseUp {
         return nil
     }
    
-   */
+  
     
     
     // Block system-defined events (media keys, function keys, etc)
