@@ -45,6 +45,9 @@ fastlane/test_output
 # Code Injection
 injectionforxcode/
 
+# VS Code
+.vscode/
+
 # Various macOS files
 .DS_Store
 .AppleDouble
