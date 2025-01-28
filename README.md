@@ -1,3 +1,6 @@
+
+![icon_512x512@2x](https://github.com/user-attachments/assets/67728aa2-0ef4-48e7-88dc-84765005acc0)
+
 # Cat Mode 🐱
 
 A macOS utility that prevents accidental keyboard and mouse input by blocking all system events. Perfect for when your cat decides to help you code!
