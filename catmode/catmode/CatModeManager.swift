@@ -4,8 +4,9 @@ import CoreGraphics
 import ServiceManagement
 import os.log
 import MASShortcut
+import AppIntents
 
-class CatModeManager: ObservableObject {
+final class CatModeManager: ObservableObject {
     internal let logger = Logger(subsystem: "com.example.CatMode", category: "CatModeManager")
     private let shortcutKey = "CatModeToggleShortcut"
     private lazy var shortcutBinder: MASShortcutBinder = MASShortcutBinder.shared()!
@@ -354,6 +355,24 @@ class CatModeManager: ObservableObject {
         overlayWindow = OverlayWindow()
         overlayWindow?.catModeManager = self
         overlayWindow?.orderFront(nil)
+    }
+    
+    // MARK: - App Intents Support
+    
+    func performToggle() async -> String {
+        toggleCatMode()
+        return isActive ? "Cat Mode activated" : "Cat Mode deactivated"
+    }
+}
+
+struct ToggleCatModeIntent: AppIntent {
+    static var title: LocalizedStringResource = "Toggle Cat Mode"
+    static var description = IntentDescription("Activates or deactivates Cat Mode")
+    
+    @MainActor
+    func perform() async throws -> some IntentResult {
+        let response = await CatModeManager.shared.performToggle()
+        return .result(value: response)
     }
 }
 

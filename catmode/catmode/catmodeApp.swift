@@ -17,3 +17,13 @@ struct CatModeApp: App {
         }
     }
 }
+
+// MARK: - App Intents Declaration
+
+extension CatModeApp {
+    var intentContainer: some AppIntentContainer {
+        AppIntentContainer(
+            ToggleCatModeIntent.self
+        )
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "appIntent": {
+    "type": "object",
+    "properties": {
+      "intents": [
+        {
+          "type": "ToggleCatModeIntent",
+          "description": "Toggles Cat Mode on or off",
+          "parameters": [],
+          "title": {
+            "default": "Toggle Cat Mode",
+            "localizationKey": "TOGGLE_CAT_MODE"
+          },
+          "suggestedInvocationPhrases": [
+            "Turn on Cat Mode",
+            "Turn off Cat Mode",
+            "Toggle Cat Mode"
+          ]
+        }
+      ]
+    }
+  }
+}

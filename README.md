@@ -1,6 +1,3 @@
-
-
-
 ![icon_256x256_transparent](https://github.com/user-attachments/assets/d33edfbf-ba4d-49e3-b8b2-cd2ce1770929)
 
 # Cat Mode 🐱
@@ -18,7 +15,7 @@ A macOS utility that prevents accidental keyboard and mouse input by blocking al
   - Subtle screen tint
 - 🔒 Safe deactivation options:
   - Keyboard shortcut
-  - Clickable area for deactiviation (coming soon ❗) 
+  - Clickable area for deactiviation (coming soon ❗)
 
 ## Requirements
 
@@ -91,6 +88,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
+
 - Special thanks to the feline friends for inspiring this project 😺
 
 ## Support

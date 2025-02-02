@@ -21,6 +21,20 @@
                ReferencedContainer = "container:catmode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "APP_INTENTS_TARGET_ID"
+               BuildableName = "CatModeIntents.appex"
+               BlueprintName = "CatModeIntents"
+               ReferencedContainer = "container:catmode.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
